@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj6somfymkqhy"]
+
+[ext_resource type="PackedScene" uid="uid://4434sxtrhcct" path="res://addons/F00F.Core/TestTools/Test3D.tscn" id="1_42rl4"]
+[ext_resource type="Script" uid="uid://cjtcw7vq05faj" path="res://Tests/Main.cs" id="2_befs7"]
+[ext_resource type="PackedScene" uid="uid://y5n64bl5acuq" path="res://Tests/Terrain/Terrain.tscn" id="3_befs7"]
+
+[node name="Root" instance=ExtResource("1_42rl4")]
+script = ExtResource("2_befs7")
+
+[node name="Terrain" parent="." index="5" instance=ExtResource("3_befs7")]
